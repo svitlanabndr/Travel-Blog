@@ -3,7 +3,7 @@ body {
 }
 
 svg {
-    fill: aliceblue;
+    fill: green;
 }
 
 .wrapper {
@@ -109,6 +109,10 @@ svg {
 
     .hamburger {
         display: block;
+        position: relative;
+  
+        
+        z-index: 1;
     }
     
     .burger-menu {
@@ -117,6 +121,14 @@ svg {
       
     .burger-shower:checked ~ .burger-menu {
         display: block;
+        position: absolute;
+        height: 100vh;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;        
+        background: #ededed;
+        list-style-type: none;
     }
 }
 
