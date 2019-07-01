@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+svg {
+    fill: aliceblue;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
@@ -18,7 +22,6 @@ body {
     grid-area: 1/2/2/4;
     max-width: 1200px;
 }
-
 
 .wrapper main {
     grid-area: 2/2/4/3;
@@ -50,6 +53,11 @@ body {
     background-color: #98DBC6;
 }
 
+.hamburger,
+.burger-shower {
+    display: none;
+}
+
 @media (max-width: 700px) {
     .wrapper {
         grid-template-columns: 1fr;
@@ -72,7 +80,6 @@ body {
     .wrapper header {
         grid-area: header;
         background-color: #5BC8AC;
-
     }
 
     .wrapper main {
@@ -99,5 +106,19 @@ body {
         grid-area: footer;
         background-color: #98DBC6;
     }
- 
-  }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+      
+    .burger-shower:checked ~ .burger-menu {
+        display: block;
+    }
+}
+
+  
+
