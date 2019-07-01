@@ -5,43 +5,99 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
-    grid-template-rows: repeat(3, minmax(100px, max-content));
+    grid-template-rows: repeat(4, minmax(100px, max-content));
     grid-gap: 10px;
 }
 
 .wrapper .header-wrapper {
-    grid-row: 1;
-    grid-column: 1/-1;
+    grid-area: 1/1/2/-1;
     background-color: #5BC8AC;
 }
 
 .wrapper header {
-    grid-row: 1;
-    grid-column: 2/4;
+    grid-area: 1/2/2/4;
     max-width: 1200px;
 }
 
 
 .wrapper main {
-    grid-row: 2;
-    grid-column: 2;
+    grid-area: 2/2/4/3;
     max-width: 1000px;
 }
 
-.wrapper aside {
-    grid-row: 2;
-    grid-column: 3;
+.wrapper .aside-wrapper {
+    background-color: #F8D89A;
+    border-radius: 10px;
+    grid-area: 2/3/4/4;
+}
+
+.wrapper aside.top-info {
+    grid-area: 2/3/3/4;
+    max-width: 200px;
+}
+.wrapper aside.bottom-info {
+    grid-area: 3/3/4/4;
     max-width: 200px;
 }
 
 .wrapper footer {
-    grid-row: 3;
-    grid-column: 2/4;
+    grid-area: 4/2/5/4;
     max-width: 1200px;
 }
 
 .wrapper .footer-wrapper {
-    grid-row: 3;
-    grid-column: 1/-1;
+    grid-area: 4/1/5/-1;
     background-color: #98DBC6;
 }
+
+@media (max-width: 700px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, minmax(100px, max-content));
+        grid-gap: 10px;
+        grid-template-areas:
+            'header'
+            'top-info'
+            'main'
+            'bottom-info'
+            'footer';
+    }
+    
+    .wrapper .header-wrapper, 
+    .wrapper .aside-wrapper,
+    .wrapper .footer-wrapper {
+        display: none;
+    }
+
+    .wrapper header {
+        grid-area: header;
+        background-color: #5BC8AC;
+
+    }
+
+    .wrapper main {
+        grid-area: main;
+    }
+
+    .wrapper aside.top-info {
+        grid-area: top-info;
+    }
+    .wrapper aside.bottom-info {
+        grid-area: bottom-info;
+    }
+
+    .wrapper aside.bottom-info,
+    .wrapper aside.top-info {
+        background-color: #F8D89A;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 80%;
+        justify-self: center;
+    }
+    
+    .wrapper footer {
+        grid-area: footer;
+        background-color: #98DBC6;
+    }
+ 
+  }
