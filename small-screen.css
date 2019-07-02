@@ -41,7 +41,7 @@
 
     .wrapper aside.bottom-info,
     .wrapper aside.top-info {
-        background-color: #F8D89A;
+        background-color: #f7ffb8;
         border-radius: 10px;
         max-width: 400px;
         width: 80%;
@@ -113,6 +113,9 @@
         cursor: default;
     }
 
+    .top-info img.photo {
+        width: 50%;
+    }
     @supports (position: fixed) {
         .burger-menu,
         .burger-menu[aria-expanded="true"] + .backdrop{

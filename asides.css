@@ -1,0 +1,22 @@
+.top-info {
+    text-align: center;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.top-info img.photo {
+    width: 75%;
+}
+
+.top-info p.name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff4f4f;
+    text-shadow: 2px 2px 1px #FFFFFF, 5px 4px 1px rgba(0,0,0,0.15);
+}
+
+.top-info p.about {
+    font-weight: 600;
+    color: #1985a3;
+    font-size: 0.9em;
+}

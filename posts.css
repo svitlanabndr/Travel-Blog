@@ -34,7 +34,7 @@
 .post-title {
   font-size: 18px;
   font-weight: bold;
-  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+  text-shadow: 2px 2px 1px #FFFFFF, 5px 4px 1px rgba(0,0,0,0.15);
   margin-bottom: 0;
 }
 
