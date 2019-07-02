@@ -26,6 +26,9 @@
 
     .wrapper main {
         grid-area: main;
+        width: 90%;
+        justify-self: center;
+
     }
 
     .wrapper aside.top-info {
@@ -116,3 +119,4 @@
         }
     }
 }
+ 

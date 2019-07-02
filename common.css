@@ -4,10 +4,8 @@ body {
 }
 
 svg {
-
     fill: #FFF;
     background-color: #f68e8e;
-
     box-sizing: border-box;
     width: 30px;
     height: 30px;
@@ -63,15 +61,14 @@ svg {
 }
 
 .hamburger,
-.burger-shower {
+.burger-shower,
+.ham-search {
     display: none;
 }
 
 .logo {
     height: 100px;
 }
-
-
 
 .burger-menu,
 .burger-menu ul,
@@ -80,7 +77,6 @@ svg {
     display: flex;
     justify-content: space-between;
 }
-
 
 .burger-menu ul {
     padding: 0;
@@ -101,8 +97,4 @@ svg {
     width: 25%;
     min-width: 200px;
     flex-direction: column;
-}
-
-.ham-search {
-    display: none;
 }
