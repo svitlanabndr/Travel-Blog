@@ -1,0 +1,28 @@
+{
+  "name": "travel-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prikhodkoos/Travel-Blog.git"
+  },
+  "author": "Svitlana Prykhodko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prikhodkoos/Travel-Blog/issues"
+  },
+  "homepage": "https://github.com/prikhodkoos/Travel-Blog#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uncss": "^1.0.6"
+  }
+}
