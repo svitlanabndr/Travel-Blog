@@ -75,6 +75,7 @@ svg {
     height: 100px;
 }
 
+footer,
 .burger-menu,
 .burger-menu ul,
 .right-nav,
@@ -97,10 +98,24 @@ svg {
 }
 
 .right-nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+    margin: 10px 0 10px 0;
     width: 25%;
     min-width: 200px;
     flex-direction: column;
+}
+
+footer .right-nav {
+    width: 80%;
+    align-items: flex-end;
+}
+
+.copyrights {
+    font-style: italic;
+    margin: auto 0;
+    text-align: right;
+
+}
+.copyrights span {
+    font-size: .9em;
+    color: gray;
 }
