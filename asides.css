@@ -48,14 +48,31 @@
 .bottom-info .search-form input {
     box-sizing: border-box;
     display: inline-block;
+    padding-left: 2%;
 }
 
-.bottom-info .search-form input[type='submit'] {
-    width: 20%;
-    float: right;
+.bottom-info .search-form {
+    height: 20px;
+    background-color: #fff;
 }
-.bottom-info .search-form input[type='text'] {
-    width: 80%;
+
+.bottom-info .search-form button {
+    width: 20px;
+    border: 0;
+    height: 100%;
+    float: right;
+    padding: 0;
+    background-color: transparent;
+}
+.bottom-info .search-form button svg {
+    width: 100%;
+    height: auto;
+}
+.bottom-info .search-form input {
+    width: calc(100% - 20px);
+    border: 0;
+    background-color: transparent;
+    height: 100%;
     float: left;
 }
 
@@ -138,20 +155,28 @@
     margin: 0;
 }
 .subscribe-form,
-.subscribe-form button {
+.subscribe-form button,
+.bottom-info .search-form,
+.subscribe-form input:focus {
     border: 2px solid #f68e8e;
     border-radius: 12px;
+}
+
+.subscribe-form input {
+    box-sizing: border-box;
+    height: 20px;
+    border-radius: 12px;
+    border: 0;
+    padding-left: 2%;
 }
 
 .subscribe-form {
     padding: 10px 0 10px 0;
 }
 
-
-.subscribe-form input:focus {
-    outline: none;
+/* .subscribe-form input:focus {
     border: 2px solid #f68e8e;
-}
+} */
 
 .subscribe-form button {
     box-sizing: border-box;
