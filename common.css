@@ -33,6 +33,7 @@ svg {
 .wrapper header {
     grid-area: 1/2/2/4;
     max-width: 1200px;
+    min-height: 54px;
 }
 
 .wrapper main {
