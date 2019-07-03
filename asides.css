@@ -17,9 +17,16 @@
 }
 
 .top-info p.about {
+    border: 2px solid #1985a3;
+    border-radius: 12px;
     font-weight: 600;
     color: #1985a3;
     font-size: 0.9em;
+}
+
+.top-info p.about:hover {
+    background-color: #1985a3;
+    color: #fff;
 }
 
 .bottom-info .subscribe-form {
@@ -30,7 +37,7 @@
 .bottom-info .subscribe-form input {
     box-sizing: border-box;
     width: 100%;
-    margin: 0;
+    margin: 5px 0 5px 0;
 }
 
 .bottom-info .subscribe-form .subscribe-label {
@@ -40,7 +47,6 @@
 
 .bottom-info .search-form input {
     box-sizing: border-box;
-
     display: inline-block;
 }
 
@@ -131,5 +137,47 @@
 .comment .comment-text {
     margin: 0;
 }
+.subscribe-form,
+.subscribe-form button {
+    border: 2px solid #f68e8e;
+    border-radius: 12px;
+}
+
+.subscribe-form {
+    padding: 10px 0 10px 0;
+}
 
 
+.subscribe-form input:focus {
+    outline: none;
+    border: 2px solid #f68e8e;
+}
+
+.subscribe-form button {
+    box-sizing: border-box;
+    padding: 0;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.subscribe-form button span{
+    color: #e06262;
+    font-weight: bold;
+    float: right;
+    line-height: 26px;
+    margin: 0 2px 0 2px;
+}
+
+.subscribe-form button:hover {
+    background-color: #f68e8e;
+}
+
+.subscribe-form button:hover span {
+    color: #fff;
+}
+
+.subscribe-form svg {
+    float: left;
+    height: 100%;
+}
