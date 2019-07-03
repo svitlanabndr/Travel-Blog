@@ -8,6 +8,11 @@
     width: 75%;
 }
 
+.about-wrp {
+    border: 2px solid #1985a3;
+    border-radius: 12px;
+}
+
 .top-info p.name,
 .bottom-info .subscribe-form .subscribe-label {
     font-weight: bold;
@@ -17,8 +22,6 @@
 }
 
 .top-info p.about {
-    border: 2px solid #1985a3;
-    border-radius: 12px;
     font-weight: 600;
     color: #1985a3;
     font-size: 0.9em;

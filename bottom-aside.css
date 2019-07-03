@@ -2,7 +2,10 @@
 .search-form,
 .subscribe-form,
 .subscribe-form button,
-.subscribe-form input:focus {
+.subscribe-form input:focus,
+.comments-wrp,
+.comments-wrp .see-more,
+.cloud {
     border: 2px solid #f68e8e;
     border-radius: 12px;
 }
@@ -28,28 +31,27 @@
     padding-left: 2%;
 }
 
-.subscribe-form button {
+.subscribe-form button,
+.comments-wrp .see-more {
     box-sizing: border-box;
     height: 30px;
     background-color: #fff;
+    color: #e06262;
     margin-top: 10px;
     padding: 0;
-}
-
-.subscribe-form button:hover {
-    background-color: #f68e8e;
-}
-
-.subscribe-form button span{
-    color: #e06262;
     font-weight: bold;
+}
+
+.subscribe-form button:hover,
+.comments-wrp .see-more:hover {
+    background-color: #f68e8e;
+    color: #fff;
+}
+
+.subscribe-form button span {
     float: right;
     line-height: 26px;
     margin: 0 2px 0 2px;
-}
-
-.subscribe-form button:hover span {
-    color: #fff;
 }
 
 .subscribe-form svg {
@@ -168,5 +170,8 @@
 }
 .comment .comment-text {
     margin: 0;
+}
+.comments-wrp .see-more {
+    margin: 0 0 10px 0;
 }
 /* comments */
