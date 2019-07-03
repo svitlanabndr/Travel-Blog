@@ -1,0 +1,28 @@
+.top-info, .bottom-info {
+    text-align: center;
+    padding: 10px 5px 0px 5px;
+    overflow-y: auto;
+}
+
+.top-info img.photo {
+    width: 75%;
+}
+
+.about-wrp {
+    border: 2px solid var(--blue);
+    border-radius: 12px;
+}
+
+.top-info p.name,
+.bottom-info .subscribe-form .subscribe-label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--darkpink);
+    text-shadow: 2px 2px 1px var(--white), 5px 4px 1px rgba(0,0,0,0.15);
+}
+
+.top-info p.about {
+    font-weight: 600;
+    color: var(--blue);
+    font-size: 0.9em;
+}

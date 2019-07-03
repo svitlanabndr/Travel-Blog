@@ -1,0 +1,124 @@
+@media (max-width: 700px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, minmax(50px, max-content));
+        grid-gap: 10px;
+        grid-template-areas:
+            'header'
+            'top-info'
+            'main'
+            'bottom-info'
+            'footer';
+    }
+
+    .wrapper .header-wrapper, 
+    .wrapper .aside-wrapper,
+    .wrapper .footer-wrapper,
+    .links,
+    .burger-menu {
+        display: none;
+    }
+
+    .wrapper header {
+        grid-area: header;
+        background-color: var(--blue);
+    }
+
+    .wrapper main {
+        grid-area: main;
+        width: 90%;
+        justify-self: center;
+    }
+
+    .wrapper aside.top-info {
+        grid-area: top-info;
+    }
+    
+    .wrapper aside.bottom-info {
+        grid-area: bottom-info;
+    }
+
+    .wrapper aside.bottom-info,
+    .wrapper aside.top-info {
+        background-color: var(--yellow);
+        border-radius: 10px;
+        max-width: 400px;
+        width: 80%;
+        justify-self: center;
+    }
+    
+    .wrapper footer {
+        grid-area: footer;
+        background-color: var(--lightblue);
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 3;
+        margin: 10px;
+    }
+
+    .ham-search {
+        margin-left: 210px;
+        margin-top: 10px;
+        z-index: 3;
+    }
+
+    .burger-menu ul {
+        flex-direction: column;
+    }
+
+    .burger-shower:checked ~ .hamburger,
+    .burger-shower:checked ~ .hamburger + .ham-search {
+        position: fixed;
+    }
+
+    .burger-shower:checked ~ .hamburger + .ham-search {
+        display: inline-block;
+    }
+
+    .burger-shower:checked ~ .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 2;
+        position: absolute;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 250px;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: var(--blue);
+        box-shadow: 3px 0 12px rgba(0,0,0,.25);   
+    }
+
+    .burger-shower:checked ~ .burger-menu .logo {
+        align-self: center;
+    }
+
+    .burger-menu:target + .backdrop,
+    .burger-shower:checked ~ .backdrop{
+        position: fixed;
+        display: block;  
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,.85);
+        z-index: 1;
+        cursor: default;
+    }
+
+    .top-info img.photo {
+        width: 50%;
+    }
+    @supports (position: fixed) {
+        .burger-menu,
+        .burger-menu[aria-expanded="true"] + .backdrop{
+            position: fixed !important;
+        }
+    }
+}
+ 

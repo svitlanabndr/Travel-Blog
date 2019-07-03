@@ -1,0 +1,137 @@
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+
+svg {
+    fill: var(--white);
+    background-color: var(--pink);
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.wrapper {
+    display: grid;
+    /* small fix */
+    grid-template-columns: minmax(100px, 1fr) 4fr minmax(100px, 1fr) minmax(100px, 1fr); 
+    grid-template-rows: minmax(100px, max-content) 500px minmax(100px, max-content) minmax(100px, max-content);
+    grid-gap: 10px;
+}
+
+.wrapper .header-wrapper {
+    grid-area: 1/1/2/-1;
+    background-color: var(--blue);
+}
+
+.wrapper header {
+    grid-area: 1/2/2/4;
+    max-width: 1200px;
+    min-height: 54px;
+}
+
+.wrapper main {
+    grid-area: 2/2/4/3;
+    max-width: 1000px;
+}
+
+.wrapper .aside-wrapper {
+    background-color: var(--yellow);
+    border-radius: 10px;
+    grid-area: 2/3/4/4;
+}
+
+.wrapper aside.top-info {
+    grid-area: 2/3/3/4;
+    max-width: 200px;
+}
+.wrapper aside.bottom-info {
+    grid-area: 3/3/4/4;
+    max-width: 200px;
+}
+
+.wrapper footer {
+    grid-area: 4/2/5/4;
+    max-width: 1200px;
+}
+
+.wrapper .footer-wrapper {
+    grid-area: 4/1/5/-1;
+    background-color: var(--lightblue);
+}
+
+.hamburger,
+.burger-shower,
+.ham-search {
+    display: none;
+}
+
+.logo {
+    height: 100px;
+}
+
+footer,
+.burger-menu,
+.burger-menu ul,
+.right-nav,
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .links svg,
+footer .links svg {
+    transition: transform .1s ease-in-out;
+    transform-origin: center center;
+}
+
+header .links svg:hover,
+footer .links svg:hover {
+    transform: scale(1.1)
+}
+
+.burger-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.burger-menu ul li {
+    text-shadow: 5px 4px 2px rgba(0,0,0,0.15);
+    display: inline-block;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.burger-menu ul li:hover {
+    text-decoration: underline;
+}
+
+.right-nav {
+    margin: 10px 0 10px 0;
+    width: 25%;
+    min-width: 200px;
+    flex-direction: column;
+}
+
+footer .right-nav {
+    width: 80%;
+    align-items: flex-end;
+}
+
+.copyrights {
+    font-style: italic;
+    margin: auto 0;
+    text-align: right;
+
+}
+.copyrights span {
+    font-size: .9em;
+    color: var(--gray);
+}
