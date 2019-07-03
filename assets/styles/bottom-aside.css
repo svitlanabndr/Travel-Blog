@@ -6,7 +6,7 @@
 .comments-wrp,
 .comments-wrp .see-more,
 .cloud {
-    border: 2px solid #f68e8e;
+    border: 2px solid var(--pink);
     border-radius: 12px;
 }
 
@@ -35,8 +35,8 @@
 .comments-wrp .see-more {
     box-sizing: border-box;
     height: 30px;
-    background-color: #fff;
-    color: #e06262;
+    background-color: var(--white);
+    color: var(--darkpink);
     margin-top: 10px;
     padding: 0;
     font-weight: bold;
@@ -44,7 +44,7 @@
 
 .subscribe-form button:hover,
 .comments-wrp .see-more:hover {
-    background-color: #f68e8e;
+    background-color: var(--pink);
     color: #fff;
 }
 
@@ -63,7 +63,7 @@
 /* search-form */
 .search-form {
     height: 20px;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .search-form * {
@@ -106,36 +106,36 @@
 
 /* some magic :) */
 .cloud li:hover {
-    color: #fff;
-    background-color: #ff4f4f;
+    color: var(--white);
+    background-color: var(--darkpink);
     border-radius: 3px;
 }
 .cloud li:nth-of-type(2n + 1) {
     font-size: .75em;
 }
 .cloud li:nth-of-type(2n + 1):hover {
-    background-color: #3aa6c5;
+    background-color: var(--blue);
     border-radius: 3px;
 }
 .cloud li:nth-of-type(3n - 1) {
     font-size: 1.25em;
 }
 .cloud li:nth-of-type(3n - 1):hover {
-    background-color: #f68e8e;
+    background-color: var(--pink);
     border-radius: 3px;
 }
 .cloud li:nth-of-type(3n + 2) {
     font-size: 1.5em;
 }
 .cloud li:nth-of-type(3n + 2):hover {
-    background-color: #09ad2c;
+    background-color: var(--green);
     border-radius: 3px;
 }
 .cloud li:nth-of-type(5n - 2) {
     font-size: 1em;
 }
 .cloud li:nth-of-type(5n - 2):hover {
-    background-color: #09ad2c;
+    background-color: var(--green);
     border-radius: 3px;
 }
 /* cloud */
@@ -156,7 +156,7 @@
 }
 
 .comment .comment-time {
-    color: gray;
+    color: var(--gray);
     font-size: .8em;
 }
 

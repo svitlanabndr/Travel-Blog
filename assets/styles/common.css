@@ -8,8 +8,8 @@ body {
 }
 
 svg {
-    fill: #FFF;
-    background-color: #f68e8e;
+    fill: var(--white);
+    background-color: var(--pink);
     box-sizing: border-box;
     width: 30px;
     height: 30px;
@@ -27,7 +27,7 @@ svg {
 
 .wrapper .header-wrapper {
     grid-area: 1/1/2/-1;
-    background-color: #3aa6c5;
+    background-color: var(--blue);
 }
 
 .wrapper header {
@@ -42,7 +42,7 @@ svg {
 }
 
 .wrapper .aside-wrapper {
-    background-color: #f7ffb8;
+    background-color: var(--yellow);
     border-radius: 10px;
     grid-area: 2/3/4/4;
 }
@@ -63,7 +63,7 @@ svg {
 
 .wrapper .footer-wrapper {
     grid-area: 4/1/5/-1;
-    background-color: #aae4e5;
+    background-color: var(--lightblue);
 }
 
 .hamburger,
@@ -94,7 +94,7 @@ footer,
 .burger-menu ul li {
     text-shadow: 5px 4px 2px rgba(0,0,0,0.15);
     display: inline-block;
-    color: #FFF;
+    color: var(--white);
     font-weight: 500;
 }
 
@@ -118,5 +118,5 @@ footer .right-nav {
 }
 .copyrights span {
     font-size: .9em;
-    color: gray;
+    color: var(--gray);
 }

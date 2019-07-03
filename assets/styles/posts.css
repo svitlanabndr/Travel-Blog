@@ -7,7 +7,7 @@
 }
 
 .post {
-  box-shadow: 0 0 3px 1px #dddddd;
+  box-shadow: 0 0 3px 1px var(--lightgray);
   border-radius: 5%;
 
 }
@@ -15,7 +15,7 @@
 .post-img-wrp {
   width: 100%;
   overflow: hidden;
-  border: #ddd solid 4px;
+  border: var(--lightgray) solid 4px;
   box-sizing: border-box;
   border-radius: 5%;
 }
@@ -35,33 +35,28 @@
 .post-title {
   font-size: 18px;
   font-weight: bold;
-  text-shadow: 2px 2px 1px #FFFFFF, 5px 4px 1px rgba(0,0,0,0.15);
+  text-shadow: 2px 2px 1px var(--white), 5px 4px 1px rgba(0,0,0,0.15);
   margin-bottom: 0;
 }
 
 .post-description {
-  border-top: solid 1px #ededed;
-  border-bottom: solid 1px #ededed;
+  border-top: solid 1px var(--lightgray);
+  border-bottom: solid 1px var(--lightgray);
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.post-author {
-  color: gray;
-  margin-bottom: 5px;
-}
-
 .post-statistic {
-  color: gray;
+  color: var(--gray);
 }
 
 .post:hover {
-  background-color: #aae4e5;
+  background-color: var(--lightblue);
 }
 .post:nth-of-type(2n):hover {
-  background-color: #fdc1c1;
+  background-color: var(--lightpink);
 }
 
 .post:hover .post-img {
@@ -70,19 +65,19 @@
 }
 
 .post:hover .post-description {
-  border-top: solid 1px #3aa6c5;
-  border-bottom: solid 1px #3aa6c5;
+  border-top: solid 1px var(--blue);
+  border-bottom: solid 1px var(--blue);
 }
 .post:nth-of-type(2n):hover .post-description {
-  border-top: solid 1px #f68e8e;
-  border-bottom: solid 1px #f68e8e;
+  border-top: solid 1px var(--pink);
+  border-bottom: solid 1px var(--pink);
 }
 
 .post:hover .post-img-wrp {
-  border: #3aa6c5 solid 4px;
+  border: var(--blue) solid 4px;
 }
 .post:nth-of-type(2n):hover .post-img-wrp {
-  border: #f68e8e solid 4px;
+  border: var(--pink) solid 4px;
 }
 
 .rating {
@@ -91,7 +86,7 @@
 }
 
 .post-time {
-  color: gray;
+  color: var(--gray);
   font-size: .9em;
   padding-bottom: 10px;
 }
@@ -104,9 +99,9 @@
 }
 
 .post .rating svg {
-  fill: #fcc205;
+  fill: var(--orange);
 }
 
 .post .comments svg {
-  fill: #3aa6c5;
+  fill: var(--blue);
 }
